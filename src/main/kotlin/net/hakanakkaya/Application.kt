@@ -11,9 +11,12 @@ fun main() {
 }
 
 fun Application.module() {
+    configureKoin()
+    configureAuth()
     configureSecurity()
     configureMonitoring()
     configureSerialization()
     configureSockets()
     configureRouting()
+    configureSession()
 }
